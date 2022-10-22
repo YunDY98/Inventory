@@ -1,3 +1,4 @@
 # Inventory
 Unreal Inventory Exersize
-//맥으로 작업됨
+//맥os + UE5
+
