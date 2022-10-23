@@ -34,12 +34,11 @@ bool UInventoryComponent::AddItem(class UItem* Item)
         return false;
     }
     
-    Item->OwingInventory = this;
+    Item->OwningInventory = this;
     Item->World = GetWorld();
     Items.Add(Item);
     
-    Items.Add(Item);
-    
+ 
     //Update UI
     OnInventoryUpdated.Broadcast();
     
@@ -52,7 +51,7 @@ bool UInventoryComponent::RemoveItem(UItem* Item)
     
     if(Item)
     {
-        Item->OwingInventory = nullptr;
+        Item->OwningInventory = nullptr;
         Item->World = nullptr;
         Items.RemoveSingle(Item);
         OnInventoryUpdated.Broadcast();

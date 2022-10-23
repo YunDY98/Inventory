@@ -50,7 +50,7 @@ public:
 
     //The inventory tha owns this item
     UPROPERTY()
-    class UInventoryComponent* OwingInventory;
+    class UInventoryComponent* OwningInventory;
 
     virtual void Use(class AInventoryCharacter* Character);
 

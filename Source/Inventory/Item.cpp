@@ -11,5 +11,5 @@ UItem::UItem()
 }
 void UItem::Use(class AInventoryCharacter* Character)
 {
-    
+
 }
